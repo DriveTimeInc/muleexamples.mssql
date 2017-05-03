@@ -12,5 +12,5 @@
 -Djava.library.path="{AnypointStudioLocation}\plugins\org.mule.tooling.server.{runtimeVersion}.ee_{studioVersion}\mule\lib\boot"
 ```
 ## Running
-1. Specify the `db.host` and `db.database` in `src/main/resources/environment.properties`. (If your `db.host` URI requires it, be sure use `/` and not `\`. Don't forget to escape it as `\\`.)
+1. Specify the `db.host` and `db.database` in `src/main/resources/environment.properties`. (If your `db.host` URI requires sub paths, use `\\`.)
 2. Modify the Database Connector to include a relevant query to your database.
