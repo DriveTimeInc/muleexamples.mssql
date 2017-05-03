@@ -1,6 +1,7 @@
 # Microsoft SQL Server Integrated Security in a Mule
 ## Prerequisites
-- Maven
+- [Anypoint Studio](https://www.mulesoft.com/lp/dl/studio)
+- [Maven](https://maven.apache.org/download.cgi)
 ---
 ## Setup
 1. Download this template from the AnyPoint Exhchange at https://todo
