@@ -5,11 +5,11 @@
 ---
 ## Setup
 1. Download the [JDBC Driver for SQL Server](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server)
-2. Copy `sqljdbc_auth.dll` to `{AnypointStudioLocation}\plugins\org.mule.tooling.server.*{runtimeVersion}*.ee_*{studioVersion}*\mule\lib\boot`
-3. Copy `sqljdbc42.jar` to `{AnypointStudioLocation}\plugins\org.mule.tooling.server.*{runtimeVersion}*.ee_*{studioVersion}*\mule\lib\user`
+2. Copy `sqljdbc_auth.dll` to `{AnypointStudioLocation}\plugins\org.mule.tooling.server.{runtimeVersion}.ee_{studioVersion}\mule\lib\boot`
+3. Copy `sqljdbc42.jar` to `{AnypointStudioLocation}\plugins\org.mule.tooling.server.{runtimeVersion}.ee_{studioVersion}\mule\lib\user`
 4. Update the Run Configuration with an additional VM Argument indicating the location of the `sqljdbc_auth.dll`.
 ```
--Djava.library.path="{AnypointStudioLocation}\plugins\org.mule.tooling.server.*{runtimeVersion}*.ee_*{studioVersion}*\mule\lib\boot"
+-Djava.library.path="{AnypointStudioLocation}\plugins\org.mule.tooling.server.{runtimeVersion}.ee_{studioVersion}\mule\lib\boot"
 ```
 ## Running
 1. Specify the `db.host` and `db.database` in `src/main/resources/environment.properties`. (If your `db.host` URI requires it, be sure use `/` and not `\`. Don't forget to escape it as `\\`.)
